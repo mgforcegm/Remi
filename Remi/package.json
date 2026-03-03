@@ -1,0 +1,38 @@
+{
+  "name": "remi",
+  "version": "2.0.0",
+  "description": "Slack-based automation agent for marketing campaign workflows",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "lint": "eslint src/",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.1.0",
+    "@slack/web-api": "^7.8.0",
+    "@google-cloud/bigquery": "^7.9.0",
+    "@google-cloud/tasks": "^6.2.0",
+    "googleapis": "^144.0.0",
+    "google-auth-library": "^9.14.0",
+    "dotenv": "^16.4.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "uuid": "^11.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "vitest": "^2.1.0",
+    "eslint": "^9.16.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "prettier": "^3.4.0"
+  }
+}
